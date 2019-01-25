@@ -1,0 +1,192 @@
+body, html {
+  font-family: "Montserrat";
+  margin: 0;
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+header {
+  padding: 1.5em;
+}
+
+header a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bolder;
+  font-size: 2.5em;
+}
+
+header a span {
+  color: burlywood;
+  font-style: oblique;
+}
+
+header i {
+  float: right;
+  cursor: pointer;
+}
+
+section {
+  padding: 4em;
+}
+
+section h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 5em;
+  width: 70%;
+}
+
+nav {
+  padding: 1.5em;
+  height: 100vh;
+  background: black;
+  color: white;
+  display: none;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+}
+
+nav i {
+  opacity: 0;
+  float: right;
+  cursor: pointer;
+}
+
+nav .clear {
+  clear: both;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 10% auto 0 auto;
+  padding: 4em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (25%)[4];
+      grid-template-columns: repeat(4, 25%);
+}
+
+nav ul li {
+  opacity: 0;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bolder;
+  font-size: 2.5em;
+}
+
+nav ul span {
+  display: block;
+}
+
+.show-menu {
+  display: block;
+  -webkit-animation: slide-menu 1s ease-in-out forwards;
+          animation: slide-menu 1s ease-in-out forwards;
+}
+
+.show-menu #close-btn {
+  -webkit-animation: show-x 1s 1s forwards;
+          animation: show-x 1s 1s forwards;
+}
+
+.show-menu li:nth-of-type(1) {
+  -webkit-animation: menu-item 0.6s forwards 1s ease-in-out;
+          animation: menu-item 0.6s forwards 1s ease-in-out;
+}
+
+.show-menu li:nth-of-type(2) {
+  -webkit-animation: menu-item 0.6s forwards 1.3s ease-in-out;
+          animation: menu-item 0.6s forwards 1.3s ease-in-out;
+}
+
+.show-menu li:nth-of-type(3) {
+  -webkit-animation: menu-item 0.6s forwards 1.6s ease-in-out;
+          animation: menu-item 0.6s forwards 1.6s ease-in-out;
+}
+
+.show-menu li:nth-of-type(4) {
+  -webkit-animation: menu-item 0.6s forwards 1.9s ease-in-out;
+          animation: menu-item 0.6s forwards 1.9s ease-in-out;
+}
+
+.close-effect {
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+}
+
+@-webkit-keyframes slide-menu {
+  from {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+  to {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
+
+@keyframes slide-menu {
+  from {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+  to {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
+
+@-webkit-keyframes show-x {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes show-x {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes menu-item {
+  from {
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes menu-item {
+  from {
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
